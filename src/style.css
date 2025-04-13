@@ -77,13 +77,3 @@ body {
 .nav-link.is-active {
   color: var(--color-blue);
 }
-
-.rectangle-2 {
-  background: #00acdc;
-  border-radius: 8px;
-  width: 37px;
-  height: 4px;
-
-  left: 509px;
-  top: 56px;
-}
