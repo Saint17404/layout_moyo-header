@@ -1,10 +1,13 @@
-* {
-  box-sizing: border-box;
+:root {
+  --color-blue: #00acdc;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
 
-header {
+.page-header {
   width: 100%;
   background: #fff;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
@@ -23,20 +26,17 @@ header {
   text-decoration: none;
 }
 
-.moyo-1 {
+.logo-image {
   width: 40px;
   height: 40px;
   display: block;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-}
-
 .nav-list {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
   align-items: center;
 }
 
@@ -59,7 +59,7 @@ nav {
 }
 
 .nav-link:hover {
-  color: #00acdc;
+  color: var(--color-blue);
 }
 
 .nav-link:hover::after,
@@ -70,12 +70,12 @@ nav {
   left: 0;
   width: 37px;
   height: 4px;
-  background: #00acdc;
+  background: var(--color-blue);
   border-radius: 8px;
 }
 
 .nav-link.is-active {
-  color: #00acdc;
+  color: var(--color-blue);
 }
 
 .rectangle-2 {
